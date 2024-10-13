@@ -1,0 +1,30 @@
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 40px;
+    background-color: #fff;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  .logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #e34c26;
+  }
+  
+  .contact-link a {
+    font-size: 1rem;
+    color: #e34c26;
+    text-decoration: none;
+    border: 2px solid #e34c26;
+    padding: 8px 16px;
+    border-radius: 20px;
+    transition: all 0.3s ease;
+  }
+  
+  .contact-link a:hover {
+    background-color: #e34c26;
+    color: #fff;
+  }
+  
