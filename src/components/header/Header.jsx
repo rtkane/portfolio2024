@@ -1,13 +1,18 @@
 import React from "react";
-import "./header.css"; // Include your CSS for styling
+import { Link } from "react-router-dom";
+import "./header.css";
 
-function Header() {
+function Header({ toggleTheme, isDarkMode }) {
   return (
     <header className="header">
-      <div className="logo">Ryan Kane</div>
-      <div className="contact-link">
-        <a href="https://www.linkedin.com/in/rtkane">Contact</a>
+      <div className="logo">
+        <Link to="/">Ryan Kane</Link>
       </div>
+      <nav className="nav-links">
+        <Link to="/">Home</Link>
+        <Link to="/projects">Projects</Link>
+        <Link to="/about">About Me</Link>
+      </nav>
     </header>
   );
 }

@@ -1,5 +1,7 @@
 import React from "react";
 import { FaReact, FaJsSquare, FaCss3Alt, FaHtml5 } from "react-icons/fa";
+import { FaPython } from "react-icons/fa";
+import { SiMysql } from "react-icons/si";
 import "./techStack.css";
 
 function TechStack() {
@@ -17,11 +19,19 @@ function TechStack() {
         </div>
         <div className="tech-item">
           <FaHtml5 size={40} color="#e34c26" />
-          <p>React</p>
+          <p>HTML5</p>
         </div>
         <div className="tech-item">
           <FaCss3Alt size={40} color="#264de4" />
-          <p>React</p>
+          <p>CSS3</p>
+        </div>
+        <div className="tech-item">
+          <FaPython size={40} color="#306998" />
+          <p>Python</p>
+        </div>
+        <div className="tech-item">
+          <SiMysql size={40} color="#00758f" />
+          <p>MySQL</p>
         </div>
       </div>
     </div>

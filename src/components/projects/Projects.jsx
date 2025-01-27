@@ -1,5 +1,5 @@
 import React from "react";
-import "./projects.css"; // Create this CSS file for styling
+import "./projects.css"; // Make sure your updated CSS file is being used
 
 function Projects() {
   const projectData = [

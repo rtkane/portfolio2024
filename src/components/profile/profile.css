@@ -1,65 +1,43 @@
 .profile-section {
-    display: flex;
-    justify-content: center;
-    padding: 20px; /* Reduce padding around the section */
-  }
-  
-  .profile-content {
-    display: flex;
-    align-items: flex-start; /* Align items at the top for larger screens */
-    background-color: #fff; /* Background for the card */
-    padding: 20px; /* Reduce padding inside the card */
-    border-radius: 15px; /* Rounded corners */
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Softer shadow for depth */
-    max-width: 800px; /* Reduce max-width for a more compact look */
-    width: 100%;
-  }
-  
-  .profile-pic {
-    width: 150px; /* Slightly reduce image size */
-    height: 150px;
-    border-radius: 50%;
-    object-fit: cover;
-    margin-right: 20px; /* Space between image and text */
-  }
-  
-  .profile-text {
-    flex: 1;
-  }
-  
-  .profile-text h2 {
-    font-size: 1.75rem; /* Slightly reduce font size */
-    color: #333;
-    margin-bottom: 5px; /* Reduce margin */
-  }
-  
-  .profile-text p {
-    color: #666;
-    font-size: 1rem; /* Adjust font size for better readability */
-    margin-bottom: 15px; /* Reduce margin */
-  }
-  
-  .profile-text h1 {
-    font-size: 1.25rem; /* Slightly reduce font size */
-    color: #444;
-    line-height: 1.4; /* Tighten line spacing */
-  }
-  
-  .highlight {
-    color: #e34c26; /* Accent color for keywords */
-  }
-  
-  /* Optional: Add responsiveness */
-  @media (max-width: 768px) {
-    .profile-content {
-      flex-direction: column; /* Stack image and text vertically on smaller screens */
-      align-items: center; /* Center align all items */
-      text-align: center; /* Center align text */
-    }
-  
-    .profile-pic {
-      margin-right: 0; /* Remove right margin */
-      margin-bottom: 15px; /* Add space below the image when stacked */
-    }
-  }
-  
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  padding: 3rem 1rem;
+  background: linear-gradient(135deg, #6a11cb, #2575fc);
+  color: white;
+  height: 100vh;
+  overflow: clip;
+}
+
+.profile-content {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  max-width: 1000px;
+  flex-wrap: wrap;
+}
+
+.profile-text {
+  text-align: center;
+  flex: 1;
+}
+
+.profile-pic {
+  border-radius: 50%;
+  height: 150px;
+  margin-right: 20px;
+  object-fit: cover;
+  width: 150px;
+
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.profile-pic:hover {
+  transform: scale(1.1);
+  box-shadow: 0 8px 16px rgba(255, 255, 255, 0.2);
+}
+
+.highlight {
+  color: #ffca3a;
+  font-weight: bold;
+}
